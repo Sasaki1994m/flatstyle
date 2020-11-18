@@ -11,6 +11,12 @@
 |
 */
 
+//ログイン前のトップページ 
 Route::get('/', function () {
-    return view('welcome');
+    return view('berore_login.toppage');
+});
+
+//ログイン後のトップページ
+Route::get('/top', function () {
+    return view('toppage');
 });
