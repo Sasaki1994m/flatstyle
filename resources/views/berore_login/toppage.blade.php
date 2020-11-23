@@ -11,82 +11,28 @@
 
 
 <div class="container">
-  <h2 class="text-center mt-5 mb-5 p-3 text-dark">どこで学ぶ?<br>ー Category ー</h2>
-  <div class="card-deck row">
+  <h3 class="text-center mt-4 mb-4 p-3"> Flatstyleとは </h3>
+  <p class="text-center mb-5 under_line">
+  知識を集積し、学習を支援する図書館です。  
+  </p>
 
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー1</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
+  <p class="text-center mb-5">
+    私立探求学園で作成した動画やテキストを<br>
+    一箇所にまとめ公開しています。
+  </p>
 
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー2</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー3</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー4</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー5</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card">
-        <img class="card-img-top store-display" src="{{ asset('images/book1.jpg') }}" alt="top">
-        <div class="card-body">
-          <h5 class="card-title">カテゴリー6</h5>
-          <p class="card-text">
-            カテゴリーの説明が入ります。カテゴリーの説明が入ります。
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  <p class="text-center mb-5">
+    ・転職成功者やフリーランスが役立てた資料も追加していきます。<br>
+    ・これからどんどん機能拡充していきます。
+  </p>
+  <p class="text-center mb-5">
+    是非一度足を運んでみて下さい。
+  </p>
+  <p class="text-center mb-5">
+    無料会員登録はこちらです<br>
+    ↓<br>
+    <a class="btn btn-primary btn-lg" href="#" role="button">無料会員登録</a>
+  </p>
 </div>
 
 @endsection
