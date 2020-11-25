@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md  navbar-dark bg-primary">
-  <a class="navbar-brand" href="/"><img src="images/flatstyle.title.png" width="125 alt="flatstyle.title.png"></a>
+  <a class="navbar-brand" href="/"><img src="/images/flatstyle.title.png" width="125 alt="flatstyle.title.png"></a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-navi" aria-controls="bs-navi" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

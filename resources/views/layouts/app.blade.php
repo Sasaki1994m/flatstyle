@@ -40,11 +40,26 @@
     background-color: #1c4587;
 }
 
+.btn-primary {
+    background-color: #1c4587;
+    border-color: #1c4587;
+    border-radius: 100px;
+}
+
+.btn-secondary{
+    background-color: #E05A0E;
+    border-color: #E05A0E;
+    border-radius: 100px;
+}
+
+.under_line {
+  text-decoration : underline;
+}
+
 /* ヘッダーのプルダウンのフォントを白色に*/
 .dropdown-item {
     color: #FFFFFF;
 }
-    </style>
     </style>
 </head>
 <body>
