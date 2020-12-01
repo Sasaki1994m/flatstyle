@@ -1,0 +1,185 @@
+
+/* //マイページ画面　「マイページ」のレイアウト　start */
+  #menu_1 ul{ 
+    margin: 30px; 
+    padding: 0; 
+    list-style: none; 
+    }
+
+    #menu_1 li{ 
+    display: inline; 
+    margin: 30px 10px; 
+
+    }
+    #menu_1 li a{
+    display: block; 
+    border: 1px solid#1c4587;
+    background-color:#1c4587;
+    text-decoration: none;
+    color: #ffffff;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    height: 80px;
+    font-weight: bold;
+
+    }
+
+/* //マイページ画面　「マイページ」のレイアウト　end */
+
+/* //マイページ画面　「ユーザ情報...」「ランクアップ申請」のレイアウト　start */
+  #menu_2 ul{ 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+  }
+
+  #menu_2 li{ 
+  display: inline; 
+  margin: 40px 10px; 
+  }
+
+  #menu_2 li a{
+  display: block; 
+  border: 1px solid #1c4587;
+  background-color: #1c4587;
+  text-decoration: none;
+  color: #ffffff;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  width: 30%;
+  height: 80px;
+  }
+
+  #menu_2 li a:hover{
+  border: 1px solid #020811;
+  background-color: #236ad4;
+  }
+  
+/* //マイページ画面　「ユーザ情報...」「ランクアップ申請」のレイアウト　end */
+
+/* //マイページ画面　「会員一覧」のレイアウト　start */
+  #menu_3 ul{ 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+  }
+
+  #menu_3 li{ 
+  display: inline; 
+
+  }
+  #menu_3 li a{
+  display: block; 
+  border: 1px solid#2d2d2d;
+  background-color: #2d2d2d;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 auto 30px auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  width: 30%;
+  height: 80px;
+
+  }
+  #menu_3 li a:hover{
+  border: 1px solid #020811;
+  background-color: #4d4d4d;
+  }
+  
+/* //マイページ画面　「会員一覧」のレイアウト　end */
+
+/* //会員一覧画面　「会員一覧」のレイアウト　start */
+.member_list{
+  margin: 30px auto 50px auto;
+  width: 50%;
+}
+/* //会員一覧画面　「会員一覧」のレイアウト　end */
+
+/* //会員一覧　退会画面　のレイアウト　start */
+
+  #member_delete ul{ 
+  margin: auto; 
+  list-style: none;
+  display: flex;
+  width: 70%;
+  padding-left: 0px;
+  text-align: center;
+  }
+  
+  #member_delete li{ 
+  display: inline; 
+  margin: 50px auto;
+  width: 40%;
+  }
+
+  #member_delete li a{
+  display: block; 
+  border: 1px solid #1c4587;
+  background-color: #1c4587;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  height: 80px;
+  }
+
+  #member_delete li a:hover{
+  border: 1px solid #020811;
+  background-color: #236ad4;
+  }
+
+  li#member_delete_2 a{
+    background-color: #2d2d2d;
+  }
+
+  li#member_delete_2 a:hover{
+    border: 1px solid #020811;
+    background-color: #4d4d4d;
+  }
+
+  .delete_contents{
+    text-align: center;
+    margin: 60px auto;
+  }
+
+/* //会員一覧　退会画面　のレイアウト　end */
+
+/* //ランクアップ申請　のレイアウト　start */
+
+.rank_up_app{
+  width: 100%;
+  text-align: center;
+}
+
+.rank_up_img{
+  width: 50%;
+  margin: 10px auto 0px auto;
+}
+.confirm_button{
+  text-align: center;
+  width: 40%;
+}
+
+/* //ランクアップ申請　のレイアウト　start */
+
+/* //ランクアップ申請完了画面　のレイアウト　start */
+
+.complete_app{
+  width: 100%;
+  text-align: center;
+}
+
+.complete_img{
+  width: 50%;
+  margin: 10px auto 0px auto;
+}
+
+/* //ランクアップ申請完了画面　のレイアウト　end   */
