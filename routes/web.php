@@ -12,7 +12,7 @@
 */
 
 
-//ログイン前のトップページ 
+//ログイン前のトップページ
 Route::get('/', function () {
     return view('berore_login.toppage');
 });
@@ -58,3 +58,15 @@ Route::get('/mypage/rankup/confirm', function (){return view('mypage.rank_up_con
 Route::get('/mypage/rankup/complete', function (){return view('mypage.rank_up_complete');})->name('mypage.rank_up_complete');
 Route::get('/mypage/memberlist', function (){return view('mypage.member_list');})->name('mypage.member');
 Route::get('/mypage/memberlist/edit', function (){return view('mypage.member_list_edit');})->name('member_list_delete');
+
+Route::get('/top/contents/create', function () {
+    return view('library.library_create');
+});
+
+Route::get('/top/contents/confirm', function () {
+    return view('library.library_confirm');
+});
+
+Route::get('/top/contents/edit', function () {
+    return view('library.library_edit');
+});
