@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h5 class="p-3 mt-5 mb-2 bg-primary text-light text-center">私立探求学園（高等生）登録</h5>
+            <h5 class="p-3 mt-5 mb-2 bg-primary text-light text-center">私立探求学園(高等生)登録</h5>
             <div class="card mb-5">
                 <div class="card-body">
 
@@ -13,7 +13,7 @@
                     <div class="row mt-5 mb-5">
                         <div class="col-sm-8 offset-sm-2">
 
-                            {!! Form::open(['method' => 'post']) !!}
+                            {!! Form::open(['route' => 'signup.confirm', 'method' => 'post']) !!}
                             <div class="form-group">
                                 {!! Form::label('name', 'アカウント名') !!}
                                 {!! Form::text('name', old('name'), ['class' => 'form-control', 'placeholder' => '例）学園 太郎']) !!}

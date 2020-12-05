@@ -8,6 +8,12 @@
     <img class="d-block w-100" src="{{ asset('images/top1.png') }}" alt="top">
   </div>
 </section>
+<!-- フラッシュメッセージ -->
+@if(Session::has('flash_message'))
+<div class="alert alert-success">
+    {{ session('flash_message') }}
+</div>
+@endif
 
 
 <div class="container">
@@ -31,7 +37,7 @@
   <p class="text-center mb-5">
     無料会員登録はこちらです<br>
     ↓<br>
-    <a class="btn btn-primary btn-lg" href="#" role="button">無料会員登録</a>
+    <a class="btn btn-primary btn-lg" href="register/elementary" role="button">無料会員登録</a>
   </p>
 </div>
 

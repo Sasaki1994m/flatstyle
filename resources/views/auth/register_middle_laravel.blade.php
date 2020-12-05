@@ -13,7 +13,7 @@
                     <div class="row mt-5 mb-5">
                         <div class="col-sm-8 offset-sm-2">
 
-                            {!! Form::open(['method' => 'post']) !!}
+                            {!! Form::open(['route' => 'signup.confirm', 'method' => 'post']) !!}
                             <div class="form-group">
                                 {!! Form::label('name', 'アカウント名') !!}
                                 {!! Form::text('name', old('name'), ['class' => 'form-control', 'placeholder' => '例）学園 太郎']) !!}

@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- フラッシュメッセージ -->
+@if(Session::has('flash_message'))
+<div class="alert alert-success">
+    {{ session('flash_message') }}
+</div>
+@endif
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -12,7 +20,7 @@
 
                     <div class="row mt-5 mb-5">
                         <div class="col-sm-8 offset-sm-2">
-                            {!! Form::open([]) !!}
+                            {!! Form::open(['route' => 'login']) !!}
 
 
                             <div class="form-group">
