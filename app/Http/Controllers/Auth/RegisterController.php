@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 
 class RegisterController extends Controller
 {
@@ -28,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -46,14 +48,6 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
-    }
 
     /**
      * Create a new user instance after a valid registration.
@@ -61,12 +55,26 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+
+    // 登録確認画面へ
+    public function signup_confirm(UserRequest $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+        $data = $request->all();
+        //dataを確認画面へ送付
+        return view('auth.confirm', [
+            'data' => $data
         ]);
+    }
+    //userの登録
+    public function store(Request $request)
+    {
+        $data = $request->except('action');
+        //usersテーブルに登録
+        $users = new User();
+        $users->name = $data['name'];
+        $users->email = $data['email'];
+        $users->password = Hash::make($data['password']);
+        $users->save();
+        return redirect('/login')->with('flash_message', __('会員登録が完了しました'));
     }
 }

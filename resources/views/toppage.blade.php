@@ -8,6 +8,12 @@
     <img class="d-block w-100" src="{{ asset('images/top1.png') }}" alt="top">
   </div>
 </section>
+<!-- フラッシュメッセージ -->
+@if(Session::has('flash_message'))
+<div class="alert alert-success">
+    {{ session('flash_message') }}
+</div>
+@endif
 
 
 <div class="container">
