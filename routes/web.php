@@ -42,12 +42,14 @@ Route::get('/top', function () {
 Route::get('/mypage', function (){return view('mypage.mypage');})->name('mypage');
 Route::get('/mypage/edit', function (){return view('mypage.mypage_edit');})->name('mypage.edit');
 Route::get('/mypage/edit/confirm', function (){return view('mypage.mypage_edit_confirm');})->name('mypage.edit_confirm');
-Route::get('/mypage/rankup', function (){return view('mypage.rank_up');})->name('mypage.rank_up.');
+Route::get('/mypage/edit/complete', function (){return view('mypage.mypage_edit_complete');})->name('mypage.edit_complete');
+Route::get('/mypage/rankup', function (){return view('mypage.rank_up');})->name('mypage.rank_up');
 Route::get('/mypage/rankup/create', function (){return view('mypage.rank_up_create');})->name('mypage.rank_up_create');
 Route::get('/mypage/rankup/confirm', function (){return view('mypage.rank_up_confirm');})->name('mypage.rank_up_confirm');
 Route::get('/mypage/rankup/complete', function (){return view('mypage.rank_up_complete');})->name('mypage.rank_up_complete');
 Route::get('/mypage/memberlist', function (){return view('mypage.member_list');})->name('mypage.member');
-Route::get('/mypage/memberlist/edit', function (){return view('mypage.member_list_edit');})->name('member_list_delete');
+Route::get('/mypage/memberlist/edit', function (){return view('mypage.member_list_edit');})->name('member_list_edit');
+Route::get('/mypage/memberlist/complete', function (){return view('mypage.member_list_complete');})->name('member_list_complete');
 
 Route::get('/top/contents/create', function () {
     return view('library.library_create');
