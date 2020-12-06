@@ -4,7 +4,7 @@
 
   <div id="menu_1">
     <ul>
-      <li><a href="#">ユーザー情報の編集</a></li>
+      <li><a href="#">コンテンツ編集入力画面</a></li>
     </ul>
   </div>
   <div class="container">
@@ -17,7 +17,7 @@
                     <div class="row mt-5 mb-5">
                         <div class="col-sm-8 offset-sm-2">
 
-                            {!! Form::open(['method' => 'post']) !!}
+                            {!! Form::open(['method' => 'get', 'url' => '/top']) !!}
                             <div class="form-group">
                                 {!! Form::label('title', 'タイトル') !!}
                                 {!! Form::text('title', old('title'), ['class' => 'form-control', 'placeholder' => '例）git勉強会']) !!}
@@ -59,7 +59,9 @@
                             @endif
 
                             {!! Form::submit('編集する', ['class' => 'btn btn-primary mt-5 p-2 btn-block']) !!}
-                            {!! Form::submit('戻る', ['class' => 'btn btn-primary mt-4 p-2 btn-block']) !!}
+                            {!! Form::button('戻る', ['class' => 'btn btn-primary mt-4 p-2 btn-block','onclick' => 'history.back()']) !!}
+                            {!! Form::close() !!}
+                            {!! Form::open(['method' => 'get', 'url' => '/top/contents/confirm']) !!}
                             {!! Form::submit('削除する', ['class' => 'btn btn-danger mt-4 p-2 btn-block']) !!}
                             {!! Form::close() !!}
                         </div>

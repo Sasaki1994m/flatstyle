@@ -4,10 +4,10 @@
 
   <div id="menu_1">
     <ul>
-      <li><a href="#">申請完了画面</a></li>
+      <li><a href="#">会員削除完了画面</a></li>
     </ul>
     <div class="complete_app">
-      <p class="complete_img">申請ありがとうございました。<br>回答までしばらくお待ち下さい</p>
+      <p class="complete_img">削除完了しました。</p>
     </div>
   </div>
   <div class="text-center">

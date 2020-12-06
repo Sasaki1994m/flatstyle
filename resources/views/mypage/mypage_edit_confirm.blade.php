@@ -14,7 +14,7 @@
           @csrf
           <div class="row mt-5 mb-5">
             <div class="col-sm-8 offset-sm-2">
-              {!! Form::open([ 'method' => 'post']) !!}
+              {!! Form::open([ 'method' => 'get', 'route' => 'mypage.edit_complete']) !!}
               <div class="form-group">
                 {!! Form::label('name', 'お名前') !!}
                 {!! Form::text('name', old('name'), ['class' => 'form-control','readonly']) !!}
@@ -29,7 +29,7 @@
                 <input id="password" type="password" name="password" class="form-control" value="{{ old('password') }}" disabled>
               </div>
               {!! Form::submit('変更する', ['name' => 'action', 'class' => 'btn btn-primary mt-5 p-2  btn-block']) !!}
-              {!! Form::submit('戻る', ['name' => 'action', 'class' => 'btn btn-secondary mt-3 p-2  btn-block']) !!}
+              {!! Form::button('戻る', ['name' => 'action', 'class' => 'btn btn-primary mt-3 p-2  btn-block','onclick' => 'history.back()']) !!}
               {!! Form::close() !!}
             </div>
           </div>

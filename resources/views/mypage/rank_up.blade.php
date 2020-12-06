@@ -16,9 +16,9 @@
           @csrf
           <div class="row mt-3 mb-5">
               <div class="col-sm-8 offset-sm-2">
-                  {!! Form::open(['method' => 'post']) !!}
+                  {!! Form::open(['method' => 'get', 'route' => 'mypage.rank_up_create']) !!}
                   {!! Form::submit('申請する', ['class' => 'btn btn-primary mt-5 p-2 btn-block']) !!}
-                  {!! Form::submit('戻る', ['class' => 'btn btn-primary mt-4 p-2 btn-block']) !!}
+                  {!! Form::button('戻る', ['class' => 'btn btn-primary mt-4 p-2 btn-block','onclick' => 'history.back()']) !!}
                   {!! Form::close() !!}
               </div>
           </div>
